@@ -1,18 +1,23 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+
     repositories {
-        jcenter()
+        gradlePluginPortal()
+        mavenCentral()      // Maven Central for standard Java and Kotlin dependencies
+        maven { url "https://jitpack.io" }  // JitPack repository for GitHub-hosted libraries
+        google() // Google's Maven repository for Android dependencies moved to bottom
     }
+
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.0.0'
-        classpath 'com.novoda:bintray-release:0.3.4'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$KOTLIN_VERSION"
+        classpath("com.android.tools.build:gradle:8.6.1") // Latest stable Android Gradle Plugin version
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.23") // Latest stable Kotlin plugin version
     }
 }
 
-allprojects {
-    repositories {
-        jcenter()
-    }
+
+plugins {
+    id 'com.android.library' version '8.6.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.9.23' apply false
 }
+
