@@ -17,6 +17,12 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
+    // Tell compiler to use java 17.
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -33,7 +39,6 @@ dependencies {
     androidTestImplementation("androidx.annotation:annotation:1.8.2")
 }
 
-
 publishing {
     publications {
         maven(MavenPublication) {
@@ -48,7 +53,6 @@ publishing {
             name = "GitHubPackages"
             url = uri(project.MAVEN_REPO_URL)
             credentials {
-                // Use environment variables or secrets for security
                 username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_USER")
                 password = project.findProperty("gpr.token") ?: System.getenv("GITHUB_TOKEN")
             }
@@ -56,21 +60,9 @@ publishing {
     }
 }
 
-// DEPRECATED PUBLISH BLOCK, KEPT IN CASE OF ERRORS WITH PUBLICATION. -> remove if published correctly.
-//publish {
-//    userOrg = POM_DEVELOPER_ID
-//    repoName = 'maven'
-//    groupId = MAVEN_GROUP_ID
-//    artifactId = MAVEN_ARTIFACT_ID
-//    publishVersion = VERSION_NAME
-//    licences = ['Apache-2.0']
-//    desc = POM_DESCRIPTION
-//    website = POM_URL
-//    issueTracker = ISSUE_URL
-//    repository = POM_SCM_URL
-//    autoPublish = false
-//    bintrayUser = bintrayUserProperty
-//    bintrayKey = bintrayApiKeyProperty
-//    dryRun = false
-//    publications = ['maven']
-//}
+// Tell compiler to use java 17.
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
