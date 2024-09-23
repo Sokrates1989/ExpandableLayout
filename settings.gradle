@@ -37,6 +37,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Felicitas Wisdom"
+rootProject.name = "Expandable Layout"
 include ':app'
 include ':sample', ':library', ':library-ui-test'

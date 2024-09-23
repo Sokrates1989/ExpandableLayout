@@ -10,7 +10,7 @@
                 android:paddingTop="@dimen/margin_normal"
     >
 
-    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+    <com.wisdom.felicitas.expandable.layout.ExpandableRelativeLayout
         android:id="@+id/expandableLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
             sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.
             sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.sample."
             />
-    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+    </com.wisdom.felicitas.expandable.layout.ExpandableRelativeLayout>
 
     <TextView
         android:id="@+id/overlayText"

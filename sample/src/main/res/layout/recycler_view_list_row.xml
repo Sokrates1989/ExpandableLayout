@@ -34,7 +34,7 @@
         android:textSize="12sp"
         />
 
-    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+    <com.wisdom.felicitas.expandable.layout.ExpandableLinearLayout
         android:id="@+id/expandableLayout"
         android:layout_width="match_parent"
         android:layout_height="120dp"
@@ -56,5 +56,5 @@
             android:textColor="@color/white"
             android:textSize="16sp"
             />
-    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+    </com.wisdom.felicitas.expandable.layout.ExpandableLinearLayout>
 </RelativeLayout>

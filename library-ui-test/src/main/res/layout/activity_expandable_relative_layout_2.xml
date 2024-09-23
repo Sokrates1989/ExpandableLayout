@@ -19,7 +19,7 @@
         android:text="move child"/>
 
 
-    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+    <com.wisdom.felicitas.expandable.layout.ExpandableRelativeLayout
         android:id="@+id/expandableLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                  bar.bar.bar.bar.bar.bar.bar.bar. hoge"
             android:textColor="@color/white"
             android:textSize="20sp"/>
-    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+    </com.wisdom.felicitas.expandable.layout.ExpandableRelativeLayout>
 
     <View
         android:layout_width="match_parent"

@@ -57,7 +57,7 @@ expandableLayout.setClosePosition(500);
 add `xmlns:app="http://schemas.android.com/apk/res-auto"`
 
 ```xml
-<com.github.aakira.expandablelayout.ExpandableRelativeLayout
+<com.wisdom.felicitas.expandable.layout.ExpandableRelativeLayout
     android:id="@+id/expandableLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -76,7 +76,7 @@ add `xmlns:app="http://schemas.android.com/apk/res-auto"`
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
         android:text="sample2" />
-</com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+</com.wisdom.felicitas.expandable.layout.ExpandableRelativeLayout>
 ```
 
 ### ExpandableLinearLayout
@@ -144,7 +144,7 @@ add `xmlns:app="http://schemas.android.com/apk/res-auto"`
         android:layout_height="0dp"
         android:layout_weight="1"/>
 
-    <com.github.aakira.expandablelayout.ExpandableWeightLayout
+    <com.wisdom.felicitas.expandable.layout.ExpandableWeightLayout
         android:id="@+id/expandableLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -157,7 +157,7 @@ add `xmlns:app="http://schemas.android.com/apk/res-auto"`
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:src="@drawable/sample" />
-    </com.github.aakira.expandablelayout.ExpandableWeightLayout>
+    </com.wisdom.felicitas.expandable.layout.ExpandableWeightLayout>
 
     <View
         android:layout_width="match_parent"

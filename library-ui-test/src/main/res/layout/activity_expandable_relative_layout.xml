@@ -64,7 +64,7 @@
             android:text="Set close height"/>
     </LinearLayout>
 
-    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+    <com.wisdom.felicitas.expandable.layout.ExpandableRelativeLayout
         android:id="@+id/expandableLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -113,5 +113,5 @@
     sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.\n
     "
             android:textColor="@color/white"/>
-    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+    </com.wisdom.felicitas.expandable.layout.ExpandableRelativeLayout>
 </RelativeLayout>
